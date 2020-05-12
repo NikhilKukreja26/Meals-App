@@ -3,8 +3,6 @@ Meals App
 
 ## Getting Started
 ![](screenshots/categories.png)
-**Category Image**
-
 
 A few resources to get you started if this is your first Flutter project:
 
