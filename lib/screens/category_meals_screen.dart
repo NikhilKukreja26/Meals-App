@@ -6,9 +6,9 @@ import '../widgets/meal_item.dart';
 class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
 
-  CategoryMealsScreen(this.availableMeals);
-
   final List<MealModel> availableMeals;
+
+  CategoryMealsScreen({this.availableMeals});
 
   @override
   _CategoryMealsScreenState createState() => _CategoryMealsScreenState();
@@ -40,11 +40,11 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
     }
   }
 
-  void _removeMeal(String mealId) {
-    setState(() {
-      return displayedMeals.removeWhere((meal) => meal.id == mealId);
-    });
-  }
+  // void _removeMeal(String mealId) {
+  //   setState(() {
+  //     return displayedMeals.removeWhere((meal) => meal.id == mealId);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             duration: displayedMeals[index].duration,
             complexity: displayedMeals[index].complexity,
             affordability: displayedMeals[index].affordability,
-            removeItem: _removeMeal,
           );
         },
       ),
