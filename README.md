@@ -3,6 +3,10 @@ Meals App
 
 ## Getting Started
 ![](screenshots/categories.png)
+![](screenshots/category_meal_screen.png)
+![](screenshots/drawer.png)
+![](screenshots/favorites.png)
+![](screenshots/meal_details_screen.png)
 
 A few resources to get you started if this is your first Flutter project:
 
